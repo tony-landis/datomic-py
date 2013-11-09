@@ -39,7 +39,7 @@ Schema
 
 You do not need to define a schema. If you want to, it is just a bunch of nested tuples.
 
-Unless specified otherwise, each attribute is assumed to a string with a cardinality of one.
+Unless specified otherwise, each attribute is assumed to be a string with a cardinality of one.
 
 ```python
 
