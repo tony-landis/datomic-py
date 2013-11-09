@@ -20,7 +20,7 @@ from datomic import *
 
 db = DB('localhost', 8888, 'mem', 'test')
 
-# create the databas
+# create the database
 db.create() 
 True
 
