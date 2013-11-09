@@ -7,7 +7,7 @@ While nothing will ever match the speed or power of Datomic's Clojure interface,
 
 
 ```shell
-pip install datomic-py
+pip install datomic
 ```
 
 Connect
