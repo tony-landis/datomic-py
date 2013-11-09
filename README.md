@@ -12,29 +12,21 @@ pip install datomic-py
 
 Connect
 =======
-
+ 
+To connect to database "test" in store "mem" on localhost at port 8888:
 
 ```python
 from datomic import *
 
-host   = 'localhost'
-port   = 8888
-store  = 'mem'
-dbname = 'test'
-db     = DB(host, port, store, dbname, schema=None)
+db = DB('localhost', 8888, 'mem', 'test')
 
-# create the database
-
+# create the databas
 db.create() 
-
 True
 
 # get the state
-
 db.info()  
-
 {'basis-t': 62, 'db/alias': 'mem/test'}
-
 ```
 
 

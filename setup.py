@@ -1,7 +1,7 @@
 from distutils.core import setup
 
 setup(
-  name='datomic-py',
+  name='datomic',
   version='0.1dev',
   description='Interface to the Datomic REST API',
   long_description=open('README.md').read(),
