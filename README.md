@@ -289,9 +289,9 @@ for r in db.datoms('avet', a='item/sku', v='item-1-sku', limit=100):
 TODO
 ====
 
-* A python library for the C++ edn parser is in progress and should be more performant than 
+* A python library for the C++ edn parser is in progress and should be more performant is in the works. 
 
-* More tests
+* More test coverage
 
 * Better support for traversing the graph
 
