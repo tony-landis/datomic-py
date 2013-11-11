@@ -100,9 +100,10 @@ Transact
 
 # send raw edn string to db.tx() to transact
 
-resp = tx('{:db/id #db/id[:db.part/user] :person/name "Bob"}')
+resp = db.tx('{:db/id #db/id[:db.part/user] :person/name "Bob"}')
 
 {'db-before': {},  'db-after': {}, 'tempids': [] }
+
 
 # or, start a new transaction to accumulate many datums by calling db.tx() with no args
 
