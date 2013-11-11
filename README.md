@@ -98,7 +98,13 @@ Transact
 
 ```python
 
-# start a new transaction
+# send raw edn string to db.tx() to transact
+
+resp = tx('{:db/id #db/id[:db.part/user] :person/name "Bob"}')
+
+{'db-before': {},  'db-after': {}, 'tempids': [] }
+
+# or, start a new transaction to accumulate many datums by calling db.tx() with no args
 
 tx = db.tx()
 
@@ -226,6 +232,14 @@ Query
 =====
 
 ```python
+
+# send a edn string to db.q()
+
+db.q('[...]')
+
+
+# or, use db.find() to build a query in a more pythonic way
+
 p_name  = '?e :person/name  ?n'
 p_age   = '?e :person/age   ?a'
 p_email = '?e :person/email ?m'
